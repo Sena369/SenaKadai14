@@ -9,13 +9,13 @@ import UIKit
 
 class AddItemViewController: UIViewController {
 
-    private var item = (name: "", check: false)
-    private var didSave: ((name: String, check: Bool)) -> Void = { _ in }
+    private var item = (name: "", isCheck: false)
+    private var didSave: ((name: String, isCheck: Bool)) -> Void = { _ in }
     private var didCancel: () -> Void = { }
 
     @IBOutlet weak var itemTextField: UITextField!
 
-    static func instatiate(didSave: @escaping ((name: String, check: Bool)) -> Void,
+    static func instatiate(didSave: @escaping ((name: String, isCheck: Bool)) -> Void,
                            didCancel: @escaping () -> Void) -> AddItemViewController {
         let secondVC = UIStoryboard(name: "AddItem", bundle: nil).instantiateInitialViewController()
         // swiftlint:disable:next force_cast

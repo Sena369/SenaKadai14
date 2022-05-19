@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    private let itemList = [(name: "りんご", isCheck: false),
+    private var itemList = [(name: "りんご", isCheck: false),
                              (name: "みかん", isCheck: true),
                              (name: "バナナ", isCheck: false),
                              (name: "パイナップル", isCheck: true)
@@ -25,6 +25,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     @IBAction func addButton(_ sender: Any) {
+        let secondVC = AddItemViewController.instatiate(
+            didSave: { [weak self] in
+                self?.itemList.append($0)
+                self?.dismiss(animated: true)
+                self?.tableView.reloadData()
+            },
+            didCancel: {
+                self.dismiss(animated: true)
+            }
+        )
+
+        let nav = UINavigationController(rootViewController: secondVC)
+        present(nav, animated: true)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

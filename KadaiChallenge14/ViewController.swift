@@ -31,8 +31,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self?.dismiss(animated: true)
                 self?.tableView.reloadData()
             },
-            didCancel: {
-                self.dismiss(animated: true)
+            didCancel: { [weak self] in
+                self?.dismiss(animated: true)
             }
         )
 

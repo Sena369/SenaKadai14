@@ -79,11 +79,11 @@
 		D357277B28330CB800BD461B /* KadaiChallenge14 */ = {
 			isa = PBXGroup;
 			children = (
-				D357277C28330CB800BD461B /* AppDelegate.swift */,
-				D357277E28330CB800BD461B /* SceneDelegate.swift */,
 				D357278028330CB800BD461B /* ViewController.swift */,
 				D3734E302835E4370008014E /* AddItemViewController.swift */,
 				D3734E2C2835E1E40008014E /* ItemTableViewCell.swift */,
+				D357277C28330CB800BD461B /* AppDelegate.swift */,
+				D357277E28330CB800BD461B /* SceneDelegate.swift */,
 				D3734E322835E4790008014E /* AddItem.storyboard */,
 				D357278228330CB800BD461B /* Main.storyboard */,
 				D3734E2D2835E1E40008014E /* ItemTableViewCell.xib */,

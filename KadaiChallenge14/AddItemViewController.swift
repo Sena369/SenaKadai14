@@ -29,6 +29,7 @@ class AddItemViewController: UIViewController {
 
     @IBAction func saveButton(_ sender: Any) {
         guard let text = itemTextField.text else { return }
+        if text.trimmingCharacters(in: .whitespaces).isEmpty == true { return }
         item.name = text
         didSave(item)
     }

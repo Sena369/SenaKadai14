@@ -9,14 +9,14 @@ import UIKit
 
 class ItemTableViewCell: UITableViewCell {
 
-    static var identifier: String { String(describing: self)}
-    static var nib: UINib { UINib(nibName: identifier, bundle: nil)}
+    static var identifier: String { String(describing: self) }
+    static var nib: UINib { UINib(nibName: String(describing: self), bundle: nil) }
 
-    @IBOutlet weak var checkImageView: UIImageView!
-    @IBOutlet weak var itemLabel: UILabel!
+    @IBOutlet private weak var checkImageView: UIImageView!
+    @IBOutlet private weak var itemLabel: UILabel!
 
     func configure(text: String, isCheck: Bool) {
-        checkImageView.image = isCheck ? UIImage(named: "check") : nil
         itemLabel.text = text
+        checkImageView.image = isCheck ? UIImage(named: "check") : nil
     }
 }

@@ -9,11 +9,12 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    private var itemList = [(name: "りんご", isCheck: false),
-                             (name: "みかん", isCheck: true),
-                             (name: "バナナ", isCheck: false),
-                             (name: "パイナップル", isCheck: true)
-                            ]
+    private var itemList: [CheckItem] = [
+        .init(name: "りんご", isChecked: false),
+        .init(name: "みかん", isChecked: true),
+        .init(name: "バナナ", isChecked: false),
+        .init(name: "パイナップル", isChecked: true)
+    ]
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -49,8 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                                  for: indexPath)
         // swiftlint:disable:next force_cast
         as! ItemTableViewCell
-        cell.configure(text: itemList[indexPath.row].name,
-                       isCheck: itemList[indexPath.row].isCheck)
+        cell.configure(item: itemList[indexPath.row])
         return cell
     }
 }

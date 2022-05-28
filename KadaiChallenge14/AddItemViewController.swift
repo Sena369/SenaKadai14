@@ -14,7 +14,7 @@ class AddItemViewController: UIViewController {
 
     @IBOutlet weak var itemTextField: UITextField!
 
-    static func instatiate(didSave: @escaping ((CheckItem)) -> Void,
+    static func instatiate(didSave: @escaping (CheckItem) -> Void,
                            didCancel: @escaping () -> Void) -> AddItemViewController {
         let secondVC = UIStoryboard(name: "AddItem", bundle: nil).instantiateInitialViewController()
         // swiftlint:disable:next force_cast

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		077830A4EA0E214E634D23E3 /* Pods_KadaiChallenge14.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00A6CC03DF8D76D3AD06EF7 /* Pods_KadaiChallenge14.framework */; };
+		D34FDB212842D6D80092E22A /* checkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FDB202842D6D80092E22A /* checkItem.swift */; };
 		D357277D28330CB800BD461B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D357277C28330CB800BD461B /* AppDelegate.swift */; };
 		D357277F28330CB800BD461B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D357277E28330CB800BD461B /* SceneDelegate.swift */; };
 		D357278128330CB800BD461B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D357278028330CB800BD461B /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		4D1950F0FD055BAE01CF82FE /* Pods-KadaiChallenge14.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KadaiChallenge14.release.xcconfig"; path = "Target Support Files/Pods-KadaiChallenge14/Pods-KadaiChallenge14.release.xcconfig"; sourceTree = "<group>"; };
 		D00A6CC03DF8D76D3AD06EF7 /* Pods_KadaiChallenge14.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KadaiChallenge14.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34FDB202842D6D80092E22A /* checkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkItem.swift; sourceTree = "<group>"; };
 		D357277928330CB800BD461B /* KadaiChallenge14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KadaiChallenge14.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D357277C28330CB800BD461B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D357277E28330CB800BD461B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				D3734E2C2835E1E40008014E /* ItemTableViewCell.swift */,
 				D357277C28330CB800BD461B /* AppDelegate.swift */,
 				D357277E28330CB800BD461B /* SceneDelegate.swift */,
+				D34FDB202842D6D80092E22A /* checkItem.swift */,
 				D3734E322835E4790008014E /* AddItem.storyboard */,
 				D357278228330CB800BD461B /* Main.storyboard */,
 				D3734E2D2835E1E40008014E /* ItemTableViewCell.xib */,
@@ -225,6 +228,7 @@
 				D357278128330CB800BD461B /* ViewController.swift in Sources */,
 				D357277D28330CB800BD461B /* AppDelegate.swift in Sources */,
 				D357277F28330CB800BD461B /* SceneDelegate.swift in Sources */,
+				D34FDB212842D6D80092E22A /* checkItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

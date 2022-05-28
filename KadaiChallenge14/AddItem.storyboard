@@ -16,27 +16,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Isd-g7-tAH">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem id="Rdx-OF-fMC">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="uQP-Pl-tCK">
-                                            <connections>
-                                                <action selector="cancelButton:" destination="Y6W-OH-hqX" id="Tlg-di-trP"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="uK8-kS-684">
-                                            <connections>
-                                                <action selector="saveButton:" destination="Y6W-OH-hqX" id="8j4-Q6-caH"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0HI-hh-Bdb">
-                                <rect key="frame" x="132" y="188" width="150" height="34"/>
+                                <rect key="frame" x="132" y="144" width="150" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="eW7-eE-SiF"/>
+                                    <constraint firstAttribute="width" constant="150" id="665-lk-kzk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -45,20 +28,29 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Isd-g7-tAH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="A4G-p2-gyO"/>
-                            <constraint firstItem="0HI-hh-Bdb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Pnx-Wq-Ggf"/>
-                            <constraint firstAttribute="trailing" secondItem="Isd-g7-tAH" secondAttribute="trailing" id="eyd-fS-aBF"/>
-                            <constraint firstItem="Isd-g7-tAH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hmy-OF-kad"/>
-                            <constraint firstItem="0HI-hh-Bdb" firstAttribute="top" secondItem="Isd-g7-tAH" secondAttribute="bottom" constant="100" id="jfd-Nw-ta4"/>
+                            <constraint firstItem="0HI-hh-Bdb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="ci8-l0-RHk"/>
+                            <constraint firstItem="0HI-hh-Bdb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="uLR-JM-Fl2"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5X8-Et-Ajh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="C5G-mp-U9a">
+                            <connections>
+                                <action selector="cancelButton:" destination="Y6W-OH-hqX" id="eD2-Np-d2n"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Z5j-Dl-W3v">
+                            <connections>
+                                <action selector="saveButton:" destination="Y6W-OH-hqX" id="NQQ-aZ-x0f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="itemTextField" destination="0HI-hh-Bdb" id="Kyu-ia-ab3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4" y="88"/>
+            <point key="canvasLocation" x="902.89855072463774" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>

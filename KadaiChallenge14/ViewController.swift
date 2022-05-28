@@ -9,11 +9,12 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    private var itemList = [(name: "りんご", isCheck: false),
-                             (name: "みかん", isCheck: true),
-                             (name: "バナナ", isCheck: false),
-                             (name: "パイナップル", isCheck: true)
-                            ]
+    private var itemList: [CheckItem] = [
+        .init(name: "りんご", isCheck: false),
+        .init(name: "みかん", isCheck: true),
+        .init(name: "バナナ", isCheck: false),
+        .init(name: "パイナップル", isCheck: true)
+    ]
 
     @IBOutlet weak var tableView: UITableView!
 
@@ -26,8 +27,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBAction func addButton(_ sender: Any) {
         let secondVC = AddItemViewController.instatiate(
-            didSave: { [weak self] in
-                self?.itemList.append($0)
+            didSave: { [weak self] name in
+                self?.itemList.append(name)
                 self?.dismiss(animated: true)
                 self?.tableView.reloadData()
             },
@@ -49,8 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                                  for: indexPath)
         // swiftlint:disable:next force_cast
         as! ItemTableViewCell
-        cell.configure(text: itemList[indexPath.row].name,
-                       isCheck: itemList[indexPath.row].isCheck)
+        cell.configure(item: itemList[indexPath.row])
         return cell
     }
 }
